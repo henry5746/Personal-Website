@@ -1,0 +1,91 @@
+/*****************************************************
+ * Resume Section
+ *****************************************************/
+ #resume {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.resume-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/*****************************************************
+ * Modal Overlay (Subtle + Centered)
+ *****************************************************/
+.modal {
+  display: none;            /* Hidden by default */
+  position: fixed;
+  z-index: 999;             /* On top of most elements */
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  /* A minimal, subtle background: not too dark */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*****************************************************
+ * Modal Content (Half-Page)
+ *****************************************************/
+.modal-content {
+  position: relative;
+  /* Center horizontally by auto left/right margin */
+  margin: 0 auto;
+  /* Center vertically using top/transform approach */
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* ~Half the page or a bit more for reading size */
+  width: 50vw;   /* 50% of the viewport width */
+  max-width: 800px;   /* Prevent it from getting too big on large screens */
+  height: 60vh;  /* 60% of the viewport height */
+  
+  background: #fff;
+  border-radius: 8px;  /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;    /* The iframe handles scrolling inside itself */
+}
+
+/*****************************************************
+ * Close "x" Button
+ *****************************************************/
+.close {
+  position: absolute;
+  top: 10px; 
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.close:hover {
+  color: #000;
+}
+
+/*****************************************************
+ * PDF Iframe
+ *****************************************************/
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* Safari’s built-in PDF viewer should add +/- icons near the top if you hover */
+}
+
+/*****************************************************
+ * Basic Button Styling
+ *****************************************************/
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #555;
+}

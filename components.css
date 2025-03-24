@@ -1,0 +1,18 @@
+/* components.css */
+/* Shared Components & Utilities */
+
+/* Button Component */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #128714;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #15ec3d;
+}

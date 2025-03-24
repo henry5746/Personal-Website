@@ -1,0 +1,79 @@
+/* Projects Section */
+#projects {
+  padding: 60px 20px;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.projects-container p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  /* 3 columns for larger screens, 1 column for smaller devices */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: start;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+}
+/* Target the specific image by its src */
+.project-card img[src="images/Screenshot 2025-03-23 at 10.55.08 PM.png"] {
+  height: 145px;
+}
+.project-card p {
+  margin-bottom: 1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* GitHub Link (single button/link) */
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: #555;
+}

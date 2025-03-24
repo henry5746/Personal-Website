@@ -1,0 +1,47 @@
+/* skills.css */
+/* Skills Section Styling */
+#skills {
+  padding: 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #0b0303;
+}
+
+.skills-content h2,
+.skills-content p {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.slide-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+/* Two-column grid for skill logos */
+.skills-list {
+  list-style: none;
+  margin: 1rem auto 0;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 400px;
+}
+
+/* Each skill item centered inside its grid cell */
+.skills-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}

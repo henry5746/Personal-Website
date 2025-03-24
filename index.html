@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <!-- Modularized CSS Files -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/resume.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero/Introduction Section -->
+  <header id="hero">
+    <div class="hero-content">
+      <h1>Hi I'm Henry!</h1>
+      <p>Welcome to my corner of the Internet.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <div class="about-container">
+        <!-- Left Column: Static Image -->
+        <div class="about-image">
+          <img src="/images/Image (19).jpg" alt="Henry Pacheco-Cruz">
+        </div>
+        <!-- Right Column: Slider -->
+        <div class="about-slider">
+          <div class="slider-container">
+            <div class="slider">
+              <!-- SLIDE 1: About Me -->
+              <div class="slide" id="slide-about-text">
+                <div class="about-text">
+                  <h2>About Me</h2>
+                  <p>
+                    Hi, I'm Henry Pacheco-Cruz! I'm a passionate developer with a strong interest in Full Stack Development.
+                    I thrive on building innovative projects that push boundaries and bring ideas to life.
+                    Whether it's crafting seamless user experiences or developing efficient back-end systems, I love 
+                    turning creative concepts into reality.
+                  </p>
+                  <p>
+                    My journey started when I first discovered my passion for building and problem-solving through coding.
+                    From experimenting with personal projects to working on real-world applications,
+                    I have been constantly learning and evolving as a developer.
+                    I enjoy exploring new technologies and pushing my skills to new heights.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- SLIDE 2: Skills (Logos) -->
+              <div class="slide" id="slide-skills">
+                <div class="skills-content">
+                  <h2>Skills</h2>
+                  <p>Here are a few of the technologies and tools I work with:</p>
+                  <ul class="skills-list">
+                    <!-- Replace these placeholder images with your real logos -->
+                    <li>
+                      <img src="/images/html.png" alt="HTML" width="50" height="50">
+                    </li>
+                    <li>
+                      <img src="/images/css.png" alt="CSS" width="50" height="50">
+                    </li>
+                    <li>
+                      <img src="/images/javascript.png" alt="JavaScript" width="50" height="50">
+                    </li>
+                    <li>
+                      <img src="/images/react.png" alt="React" width="50" height="50">
+                    </li>
+                    <li>
+                      <img src="/images/node.png" alt="Node.js" width="50" height="50">
+                    </li>
+                    <li>
+                      <img src="/images/python.png" alt="Python" width="50" height="50">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- SLIDE 3: Behind the Scenes -->
+              <div class="slide" id="slide-behind-scenes">
+                <div class="behind-content">
+                  <h2>Behind the Scenes</h2>
+                  <ul>
+                    <li>
+                      <strong>Rubik’s Cube Enthusiast:</strong> 
+                      I can solve one in under a minute and love applying puzzle-solving skills to coding challenges.
+                    </li>
+                    <li>
+                      <strong>Constant Learner:</strong> 
+                      Always exploring the latest frameworks or tinkering with new ideas to keep my skill set sharp.
+                    </li>
+                    <li>
+                      <strong>Balanced Lifestyle:</strong> 
+                      Outside of coding, I enjoy staying active, experimenting in the kitchen, 
+                      or diving into a good podcast.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- NAVIGATION ARROWS -->
+            <div class="slider-controls">
+              <button class="prev" aria-label="Previous Slide">‹</button>
+              <button class="next" aria-label="Next Slide">›</button>
+            </div>          
+            
+            <!-- DOT NAVIGATION -->
+            <div class="slider-dots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-container">
+        <h2>Projects</h2>
+        <p>Explore some of my most recent and notable work:</p>
+    
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <img src="images/Screenshot 2025-03-23 at 10.54.09 PM.png" alt="Project 1 screenshot">
+            <h3>Project One</h3>
+            <p>
+              Used MediaPipe for hand tracking, detected the pinch gesture (thumb and index finger close together), and then displayed pink heart emojis on the screen whenever the gesture was recognized.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/YourUsername/ProjectOne" 
+                 target="_blank" rel="noopener noreferrer">
+                 GitHub
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <img src="images/Screenshot 2025-03-23 at 4.21.05 PM.png" alt="Project 2 screenshot">
+            <h3>Project Two</h3>
+            <p>
+              Created full-stack web application for Jang’s International Restaurant that streamlined operations by managing inventory, enabling customers to reserve seating, and implementing a loyalty-based promotion system.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/YourUsername/ProjectTwo" 
+                 target="_blank" rel="noopener noreferrer">
+                 GitHub
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <img src="images/Screenshot 2025-03-23 at 10.55.08 PM.png" alt="Project 3 screenshot">
+            <h3>Project Three</h3>
+            <p>
+              I built a Blackjack game from scratch that allows players to play against a computer dealer, with features like hitting, staying, and automatic win/loss detection. The game was originally developed in Java with a terminal interface.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/YourUsername/ProjectThree" 
+                 target="_blank" rel="noopener noreferrer">
+                 GitHub
+              </a>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+<section id="resume">
+  <div class="resume-container">
+    <h2>Resume</h2>
+    <button class="btn" id="openResumeBtn">View Resume</button>
+  </div>
+</section>
+
+<!-- Centered Modal for PDF Resume -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+    <!-- Close "x" button -->
+    <span class="close">&times;</span>
+    <!-- The PDF is loaded in an iframe so Safari can use its built-in +/- icons -->
+    <!-- #zoom=page-width or #zoom=200 may or may not be honored by Safari -->
+    <iframe src="Resume-3.pdf#zoom=page-width" frameborder="0"></iframe>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="contact-container">
+    <h2>Contact</h2>
+    <p>Feel free to reach out or connect with me:</p>
+    <ul class="contact-list">
+      <li><a href="mailto:someone@example.com">someone@example.com</a></li>
+      <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+      <li><a href="https://github.com/YourGitHub" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/YourLinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer id="siteFooter">
+    <div class="footer-container">
+      <p>&copy; 2025 Henry Pacheco-Cruz. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

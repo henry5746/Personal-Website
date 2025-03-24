@@ -1,0 +1,32 @@
+/* hero.css */
+/* Hero Section Styling */
+#hero {
+  margin-top: 0;
+  background: url('/images/IMG_8972.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  padding-top: 10vh;       /* Push content down */
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+/* Dark overlay for better text contrast */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Ensure content appears above the overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}

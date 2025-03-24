@@ -1,0 +1,19 @@
+/* base.css */
+/* Global Reset & Base Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, header, nav {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}

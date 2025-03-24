@@ -1,0 +1,16 @@
+#siteFooter {
+  background-color: #f9f9f9; /* Subtle background for contrast */
+  padding: 20px 0;          /* Vertical spacing */
+  text-align: center;       /* Center the text */
+}
+
+.footer-container {
+  max-width: 1200px;        /* Optional: limit width for large screens */
+  margin: 0 auto;
+  padding: 0 20px;          /* Padding for smaller screens */
+}
+
+.footer-container p {
+  color: #666;              /* Slightly muted text color */
+  margin: 0;               /* Remove default paragraph margin */
+}
